@@ -1,0 +1,41 @@
+<html>
+    <head> 
+            <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    </head> 
+
+    <body>
+        <script>
+            var image; //empty variable
+            var w = innerWidth
+            var h= innerHeight
+        function setup() {
+            createCanvas(w,h,WEBGL);
+            image= loadImage('death.jpg');
+
+            }   
+// runs only once^
+        function draw() {
+            
+            background("skyblue");
+            rotateY(mouseX/100);
+            rotateX(mouseY/100);
+            rect(100,100,300,300) // depending on where the 100, 100 is it runs that first
+            fill("image");
+
+            rotateY(mouseX/100);
+            rotateX(mouseY/100);
+            rect(30,100,60,300) // depending on where the 100, 100 is it runs that first
+            fill("yellow");
+            
+            rotateY(mouseX/100);
+            rotateX(mouseY/100);
+            rect(100,100,100,100) // depending on where the 100, 100 is it runs that first
+            fill("offwhite");
+            
+            
+        }
+//draws sixty times a second 
+        </script> 
+        
+
+    </body> 

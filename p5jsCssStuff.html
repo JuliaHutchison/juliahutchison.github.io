@@ -1,0 +1,33 @@
+<html>
+    <head> 
+            <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    </head> 
+
+    <body>
+        <script>
+            var w = innerWidth
+            var h= innerHeight
+        function setup() {
+            createCanvas(w,h);
+
+            }   
+// runs only once^
+        function draw() {
+            background("red");
+            rect(100, 100, mouseX, mouseY); // depending on where the 100, 100 is it runs that first
+            fill("green");
+            noStroke();
+            circle( mouseX, mouseY,100, 100);
+            fill("blue");
+            noStroke();
+        }
+//draws sixty times a second 
+        </script> 
+        
+
+    </body> 
+
+
+
+</html>
+
