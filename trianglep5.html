@@ -8,19 +8,21 @@
             var image; //empty variable
             var w = innerWidth
             var h= innerHeight
-        function setup() {
+        function setup() {  // runs only once^
             createCanvas(w,h,WEBGL);
-            image= loadImage('death.jpg');
-
             }   
-// runs only once^
+
+            function preload(){
+                image= loadImage('death.jpg');
+            }
+
         function draw() {
             
             background("skyblue");
             rotateY(mouseX/100);
             rotateX(mouseY/100);
             rect(100,100,300,300) // depending on where the 100, 100 is it runs that first
-            fill("image");
+            fill("orange");
 
             rotateY(mouseX/100);
             rotateX(mouseY/100);
