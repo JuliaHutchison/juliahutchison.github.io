@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js">
+        </script>
+    </head>
+    <body>
+        <script> 
+            var pic;
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+        function preload(){
+            pic = loadImage("background.jpg");
+        }
+        function setup(){
+            createCanvas(w,h,WEBGL);
+
+        }
+        function draw(){
+            background(100);
+            pic.background(255);
+        }
+
+        </script>
+    </body>
+</html>
